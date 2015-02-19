@@ -7,6 +7,35 @@ Just drop the `_layouts` folder into the Jekyll directory you want to serve Big 
 
 The file `example.markdown` in `_drafts` shows a demo of how to write Big presentations using this layout.
 
+For example:
+```markdown
+---
+layout: big
+title:  "Bigyll example"
+sections:
+- this is slide 1
+- this is slide 2
+---
+```
+
+Do note that if you want to use Markdown formatting --- such as images, bold/italic, et cetera --- in your slides, you have to format your sections as blocks using the pipe (`|`) character, as in the following example:
+```markdown
+---
+layout: big
+title:  "Bigyll example"
+sections:
+- |
+    this slide has *emphasized text*
+- | 
+    this slide has
+    two lines of text
+- | 
+    this slide has [a link](github.com/hawkw/bigyll)
+---
+```
+This is due to issues in the way Jekyll parses YAML front-matter. I'm looking into a workaround but for now, just keep that in mind.
+
+
 #### Styles:
 There's now support for @mdnzr's [fork](https://github.com/mdznr/big), which sizes text using the golden ratio, and @jed's [weenote](https://github.com/jed/weenote), for making [Takahashi](http://en.wikipedia.org/wiki/Takahashi_method)-style presentations. Just use the `big-mdnzr` or `big-weenote` layouts instead of the default `big` layout.
 
