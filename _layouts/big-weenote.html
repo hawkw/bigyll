@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ page.title }}</title>
+<meta charset='utf-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<script src="/js/weenote.js"></script>
+    <style>
+      body {
+        font-family: "Helvetica", "sans-serif";
+        font-weight: bold;
+        background-color: #000;
+        text-align: center;
+        color: #FFF;
+        white-space: nowrap;
+      }
+      a, em {
+        color: #C00;
+        font-style: normal;
+      }
+      a {
+        border-bottom: .1em dotted;
+        text-decoration: none;
+      }
+    </style>
+</head><body>
+{% for section in page.sections %}
+<div>{{ section | markdownify }}</div>
+{% endfor %}
+<body>
+
+</body>
+</html>
