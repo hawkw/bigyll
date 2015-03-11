@@ -41,7 +41,7 @@ There's now support for @mdnzr's [fork](https://github.com/mdznr/big), which siz
 
 ### To-do:
 
- -[x] Include the JS and CSS in a site-level directory and link them in.
- -[ ] Maybe add support for [big-themes](https://github.com/tmcw/big-themes)
- -[ ] Make it possible to write presentations with the Markdown syntax from [big.py](https://github.com/harperreed/bigpy)
+ - [x] Include the JS and CSS in a site-level directory and link them in.
+ - [ ] Maybe add support for [big-themes](https://github.com/tmcw/big-themes)
+ - [ ] Make it possible to write presentations with the Markdown syntax from [big.py](https://github.com/harperreed/bigpy)
 
